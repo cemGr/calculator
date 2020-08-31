@@ -1,5 +1,5 @@
 //var a = document.getElementById("result").innerHTML;
-var a=0;
+var rechnung=0;
 var bildschirm="";
 
 function hallo(c){
@@ -11,26 +11,30 @@ function mathexpression(e){
   switch (e) {
     case 10:
       bildschirm+='+';
+      rechnung+='#+';
       document.getElementById("result").innerHTML= bildschirm;
     break;
 
     case 11:
       bildschirm+='-';
+        rechnung+='#-';
       document.getElementById("result").innerHTML= bildschirm;
     break;
     case 12:
       bildschirm+='*';
+      rechnung+='#*';
       document.getElementById("result").innerHTML= bildschirm;
     break;
     case 13:
       bildschirm+='/';
+        rechnung+='#/';
       document.getElementById("result").innerHTML= bildschirm;
     break;
     case 14:
-      bildschirm+='=';
     break;
     case 15:
       bildschirm+='%';
+      rechnung+='#%';
       document.getElementById("result").innerHTML= bildschirm;
     break;
     case 16:

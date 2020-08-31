@@ -11,14 +11,15 @@ body{
 }
 
 #result {
+  overflow: auto;
+  
   padding: 50px;
-  border: 2px dotted blue;
+  border: 2px solid black;
   text-align: center;
 }
 
 .row{
   display: flex;
-  border: 1px dotted red;
   padding: 2%;
 }
 
