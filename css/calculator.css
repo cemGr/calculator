@@ -40,7 +40,15 @@ body{
 .reset{
   padding: auto;
 }
+
+#box:active{
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  background-color: red;
+}
 #box{
+  cursor: -webkit-grab;
+  cursor: grab;
   border: 2px solid none;
   padding: 20px;
   text-align: center;
