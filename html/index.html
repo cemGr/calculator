@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/calculator.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javatest</title>
+  </head>
+  <body>
+
+    <h1 id="line">
+       hallo
+    </h1>
+    <div id="interface">
+      <div id="result"> Hallo :)
+      </div>
+      <div class="row">
+          <div class="math" onclick="hallo('1')">
+            1
+          </div>
+        <div class="math" onclick="hallo('2')">
+          2
+        </div>
+        <div class="math" onclick="hallo('3')">
+          3
+        </div>
+        <div class="math" id="add"  onclick="mathexpression('10')">
+          +
+        </div>
+        <div class="math" id="sub"  onclick="mathexpression('11')">
+          -
+        </div>
+      </div>
+      <div class="row">
+        <div class="math"  onclick="hallo('4')">
+          4
+        </div>
+        <div class="math"  onclick="hallo('5')">
+          5
+        </div>
+        <div class="math"  onclick="hallo('6')">
+          6
+        </div>
+        <div class="math" id="mal"  onclick="mathexpression('12')">
+          *
+        </div>
+        <div class="math" id="div" onclick="mathexpression('13')">
+          /
+        </div>
+      </div>
+      <div class="row">
+          <div class="math"  onclick="hallo('7')">
+            7
+          </div>
+          <div class="math"  onclick="hallo('8')">
+            8
+          </div>
+          <div class="math"  onclick="hallo('9')">
+            9
+          </div>
+          <div class="math" id="equal"  onclick="mathexpression('14')">
+            =
+          </div>
+          <div class="math" id="mod"  onclick="mathexpression('15')">
+            %
+          </div>
+        </div>
+        <div class="reset" onclick="mathexpression('16')">
+           <div id="box">
+              reset
+            </div>
+          </div>
+    </div>
+
+
+
+
+
+
+
+    <script
+     language="javascript" type="text/javascript" src="../js/test.js">
+    </script>
+  </body>
+</html>

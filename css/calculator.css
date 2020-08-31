@@ -1,0 +1,48 @@
+body{
+  background-image: url(../images/mathe.jpg);
+}
+
+#interface{
+  border: 2px solid black;
+  width: 600px;
+  margin: auto;
+  overflow: auto;
+  background-color: #2F4F4F;
+}
+
+#result {
+  padding: 50px;
+  border: 2px dotted blue;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  border: 1px dotted red;
+  padding: 2%;
+}
+
+.math{
+  cursor: -webkit-grab;
+  cursor: grab;
+  text-align: center;
+  margin-right: 10%;
+  border: 2px solid black;
+  background-color: gray;
+  padding: 25px;
+}
+.math:active{
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  background-color: red;
+}
+
+.reset{
+  padding: auto;
+}
+#box{
+  border: 2px solid none;
+  padding: 20px;
+  text-align: center;
+  background-color: gray;
+}
