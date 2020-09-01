@@ -6,13 +6,16 @@ body{
   border: 2px solid black;
   width: 600px;
   margin: auto;
+  padding-top:30px;
   overflow: auto;
   background-color: #2F4F4F;
 }
 
 #result {
+  width: 433px;
+  margin: 0px 15px;
   overflow: auto;
-  
+  background-color: hsla(161, 100%, 91%, 1);
   padding: 50px;
   border: 2px solid black;
   text-align: center;
@@ -40,14 +43,15 @@ body{
 
 .reset{
   padding: auto;
+  border: 1px solid black;
 }
 
-#box:active{
+.box:active{
   cursor: -webkit-grabbing;
   cursor: grabbing;
   background-color: red;
 }
-#box{
+.box{
   cursor: -webkit-grab;
   cursor: grab;
   border: 2px solid none;

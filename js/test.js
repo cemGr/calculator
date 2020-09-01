@@ -4,7 +4,7 @@ var bildschirm="";
 var safer;
 
 //Bildschirmausgabe
-function hallo(c){
+function output(c){
     rechnung+=c;
     bildschirm+=c;
     document.getElementById("result").innerHTML= bildschirm;
@@ -59,26 +59,23 @@ function calculate(){
   //now we are calculating
 
 //strenge rechenregeln
-  for(i=0;safer.length>i;i++){
+  for(let i=0;safer.length>i;i++){
     if(safer[i]=='*'){
       safer[i+1]=parseFloat(safer[i-1])* parseFloat(safer[i+1]);
       safer[i-1]="$";
       safer[i]="$";
-      alert("mul");
     }
 
     else if(safer[i]=='/'){
       safer[i+1]=parseFloat(safer[i-1])/parseFloat(safer[i+1]);
       safer[i-1]="$";
       safer[i]="$";
-      alert("div");
-
     }
+
     else if(safer[i]=='%'){
       safer[i+1]=parseInt(safer[i-1]) % parseInt(safer[i+1]);
       safer[i-1]="$";
       safer[i]="$";
-      alert("modulo");
     }
   }
       /// $$$$1+1+$$4+5
@@ -88,27 +85,25 @@ function calculate(){
       //lastindex end;
       //rechnung für die laschen rechenregeln
 
-  for(i=0;safer.length>i;i++){
+  for(let i=0;safer.length>i;i++){
   //safer wieder cutten für die einfache rechnung
     if(safer[i]=='+'){
-      for(g=i+1;g<safer.length;g++){
+      for(let g=i+1;g<safer.length;g++){
         if(safer[g]!="$"){
           console.log(safer[g]);
           safer[g]= parseInt(safer[g])+ parseInt(safer[i-1]);
           safer[i]='#';
           safer[i-1]='#';
-          alert("addition");
           break;
         }
       }
     }
     else if(safer[i]=='-'){
-      for(g=i+1;g<safer.length;g++){
+      for(let g=i+1;g<safer.length;g++){
         if(safer[g]!="$"){
           safer[g]=parseFloat(safer[g])-parseFloat(safer[i-1]);
           safer[i]='#';
           safer[i-1]='#';
-          alert("subtraktion");
           break;
         }
       }
